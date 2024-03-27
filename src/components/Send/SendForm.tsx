@@ -30,26 +30,31 @@ interface SelectItem {
 }
 
 const CHAIN_SELECT_ITEMS: SelectItem[] = [
+  // {
+  //   value: Chain.ETH,
+  //   label: CHAIN_TO_CHAIN_NAME[Chain.ETH],
+  //   icon: CHAIN_ICONS[Chain.ETH],
+  // },
   {
-    value: Chain.ETH,
-    label: CHAIN_TO_CHAIN_NAME[Chain.ETH],
-    icon: CHAIN_ICONS[Chain.ETH],
+    value: Chain.OP,
+    label: CHAIN_TO_CHAIN_NAME[Chain.OP],
+    icon: CHAIN_ICONS[Chain.OP],
   },
   {
-    value: Chain.AVAX,
-    label: CHAIN_TO_CHAIN_NAME[Chain.AVAX],
-    icon: CHAIN_ICONS[Chain.AVAX],
+    value: Chain.BASE,
+    label: CHAIN_TO_CHAIN_NAME[Chain.BASE],
+    icon: CHAIN_ICONS[Chain.BASE],
   },
-  {
-    value: Chain.ARB,
-    label: CHAIN_TO_CHAIN_NAME[Chain.ARB],
-    icon: CHAIN_ICONS[Chain.ARB],
-  },
+  // {
+  //   value: Chain.ARB,
+  //   label: CHAIN_TO_CHAIN_NAME[Chain.ARB],
+  //   icon: CHAIN_ICONS[Chain.ARB],
+  // },
 ]
 
 export const DEFAULT_FORM_INPUTS: TransactionInputs = {
-  source: Chain.ETH,
-  target: Chain.AVAX,
+  source: Chain.OP,
+  target: Chain.BASE,
   address: '',
   amount: '',
 }
